@@ -1,0 +1,46 @@
+{
+  "company": {
+    "name": "Tech Innovators Inc.",
+    "description": "A leading technology company providing cutting-edge solutions for businesses worldwide.",
+    "features": [
+      {
+        "id": 1,
+        "title": "Web Development",
+        "description": "Custom websites built with modern technologies and best practices.",
+        "icon": "Code" 
+      },
+      {
+        "id": 2,
+        "title": "Startup Solutions",
+        "description": "Comprehensive services to help startups build, grow, and scale with tailored strategies and technologies.",
+        "icon": "rocket"
+      },
+      {
+        "id": 3,
+        "title": "Cloud Solutions",
+        "description": "Secure, scalable, and flexible cloud infrastructure for seamless business operations.",
+        "icon": "cloud"
+      },
+      {
+        "id": 4,
+        "title": "AI Solutions",
+        "description": "Innovative AI solutions that automate processes, boost efficiency, and support data-driven decisions.",
+        "icon": "brain"
+      },
+      {
+        "id": 5,
+        "title": "Cybersecurity",
+        "description": "Comprehensive security services to protect business data and infrastructure from cyber threats.",
+        "icon": "lock"
+      },
+      {
+        "id": 6,
+        "title": "Blockchain Solutions",
+        "description": "Decentralized technologies to ensure transparency, security, and efficiency in business transactions.",
+        "icon": "Code"
+      }
+      
+    ]
+  }
+}
+
