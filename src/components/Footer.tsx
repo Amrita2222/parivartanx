@@ -6,12 +6,14 @@ import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'luc
 
 export default function Footer() {
   const footerLinks = {
-    company: ['About Us', 'Services', 'Projects', 'Team', 'Careers'],
+   
+    service: ['Web Development', ' UI/UX Design',  'Mobile Apps', 'Consulting'],
     support: ['Help Center', 'Terms of Service', 'Privacy Policy', 'FAQ'],
+    company: ['About Us', 'Services', 'Projects', 'Team', 'Careers'],
     contact: [
-      { icon: <Mail className="w-4 h-4" />, text: 'contact@softconic.com' },
+      { icon: <Mail className="w-4 h-4" />, text: 'parivartanx.info@gmail.com' },
       { icon: <Phone className="w-4 h-4" />, text: '+1 (555) 123-4567' },
-      { icon: <MapPin className="w-4 h-4" />, text: '123 Tech Street, Silicon Valley, CA' },
+      { icon: <MapPin className="w-4 h-4" />, text: 'Patna INDIA, PT 835700' },
     ],
   };
 
@@ -25,7 +27,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0f172a] border-t border-gray-800">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -51,7 +53,24 @@ export default function Footer() {
               ))}
             </div>
           </motion.div>
-
+              {/* Servive Links */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                >
+                  <h3 className="text-white font-semibold text-xl mb-6">Services</h3>
+                  <ul className="space-y-4">
+                    {footerLinks.service.map((link) => (
+                      <li key={link}>
+                        <a href="#" className="text-gray-400 hover:text-emerald-500 transition-colors text-lg sm:text-xl">
+                          {link}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
           {/* Company Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -70,7 +89,7 @@ export default function Footer() {
               ))}
             </ul>
           </motion.div>
-
+              
           {/* Support Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
